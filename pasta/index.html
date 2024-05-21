@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Preencha o formulário:</h2>
+
+<form action="/submit_form" method="post">
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="cpf">CPF:</label><br>
+    <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="123.456.789-00" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="estadoCivil">Estado Civil:</label><br>
+    <select id="estadoCivil" name="estadoCivil">
+        <option value="solteiro">Solteiro(a)</option>
+        <option value="casado">Casado(a)</option>
+        <option value="divorciado">Divorciado(a)</option>
+        <option value="viuvo">Viúvo(a)</option>
+    </select><br><br>
+    <label for="data_nascimento">Data de Nascimento:</label><br>
+    <input type="date" id="data_nascimento" name="data_nascimento" required><br><br><form action="processar_formulario.php" method="post">
+        <label for="sexo">Sexo:</label>
+        <select name="sexo" id="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select>
+        <br><br>
+
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Preencha o formulário:</h2>
+
+<h3>Informações do Cônjuge:</h3>
+
+<form action="/submit_spouse_form" method="post">
+    <label for="nome_conjuge">Nome:</label><br>
+    <input type="text" id="nome_conjuge" name="nome_conjuge" required><br><br>
+
+    <label for="cpf_conjuge">CPF:</label><br>
+    <input type="text" id="cpf_conjuge" name="cpf_conjuge" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="123.456.789-00" required><br><br>
+
+    <label for="email_conjuge">Email:</label><br>
+    <input type="email" id="email_conjuge" name="email_conjuge" required><br><br>
+    <label for="estadoCivil">Estado Civil:</label><br>
+    <select id="estadoCivil" name="estadoCivil">
+        <option value="solteiro">Solteiro(a)</option>
+        <option value="casado">Casado(a)</option>
+        <option value="divorciado">Divorciado(a)</option>
+        <option value="viuvo">Viúvo(a)</option>
+    </select><br><br>
+    <label for="data_nascimento_conjuge">Data de Nascimento:</label><br>
+    <input type="date" id="data_nascimento_conjuge" name="data_nascimento_conjuge" required><br><br><form action="processar_formulario.php" method="post">
+        <label for="sexo">Sexo:</label>
+        <select name="sexo" id="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select>
+        <br><br>
+
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
